@@ -11,7 +11,7 @@ html, body {
 
 body {
   color: #4d4e53;
-  background-color: white;
+  background-color: #f9f9f9;
   margin: 0 auto;
   padding: 0 20px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -25,11 +25,12 @@ img {
 
 a,
 a:active {
-  color: #606;
+  color: #323a4d;
   text-decoration: none;
 }
 
 a:hover {
+  color: #00e2ff;
   text-decoration: none;
 }
 
@@ -84,7 +85,7 @@ h4 {
 
 h4.name {
   color: #fff;
-  background: #6d426d;
+  background: #2F9BD6;
   box-shadow: 0 .25em .5em #d3d3d3;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
@@ -93,11 +94,11 @@ h4.name {
 }
 
 h4.name a {
-  color: #fc83ff;
+  color: #d4d4d4;
 }
 
 h4.name a:hover {
-  border-bottom-color: #fc83ff;
+  border-bottom-color: #d4d4d4;
 }
 
 h5, .container-overview .subsection-title {
@@ -115,7 +116,7 @@ h6 {
 
 tt, code, kbd, samp {
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
-  background: #f4f4f4;
+  background: #E8E8E8;
   padding: 1px 5px;
 }
 
@@ -142,7 +143,7 @@ header {
 
 section {
   display: block;
-  background-color: #fff;
+  background-color: #f9f9f9;
   padding: 0 0 0 30px;
 }
 
@@ -161,7 +162,7 @@ nav {
   float: left;
   display: block;
   width: 250px;
-  background: #fff;
+  background: #f9f9f9;
   overflow: auto;
   position: fixed;
   height: 100%;
@@ -205,12 +206,13 @@ nav ul a:active {
   line-height: 18px;
   padding: 0;
   display: block;
-  font-size: 12px;
+  /* default 12px is too small */
+  font-size: 13px;
 }
 
 nav a:hover,
 nav a:active {
-  color: #606;
+  color: #80cfff;
 }
 
 nav > ul {
@@ -218,7 +220,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: #606;
+  color: #0375B8;
   margin-top: 10px;
 }
 
@@ -241,7 +243,7 @@ nav h2 {
 nav > h2 > a {
    display: block;
    margin: 10px 0 -10px;
-   color: #606 !important;
+  color: #0375B8 !important;
 }
 
 footer {
@@ -275,11 +277,11 @@ footer {
 }
 
 .type-signature {
-  color: #CA79CA
+  color: #fff
 }
 
 .type-signature:last-child {
-  color: #eee;
+  color: #fff;
 }
 
 .name, .signature {
@@ -287,7 +289,7 @@ footer {
 }
 
 .signature {
-    color: #fc83ff;
+  color: #E8E8E8;
 }
 
 .details {
@@ -352,7 +354,7 @@ footer {
 .prettyprint code {
   line-height: 18px;
   display: block;
-  background-color: #0d152a;
+  background-color: #031A34;
   color: #4D4E53;
 }
 
@@ -419,21 +421,21 @@ footer {
 }
 
 .params td, .params .name, .props .name, .name code {
-   color: #4D4E53;
+  color: #4D4E53;
    font-family: Consolas, Monaco, 'Andale Mono', monospace;
-   font-size: 100%;
+  font-size: 100%;
 }
 
 .params td, .params th, .props td, .props th {
-   margin: 0px;
-   text-align: left;
-   vertical-align: top;
-   padding: 10px;
-   display: table-cell;
+  margin: 0px;
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+  display: table-cell;
 }
 
 .params td {
-   border-top: 1px solid #eee
+  border-top: 1px solid #eee
 }
 
 .params thead tr, .props thead tr {
@@ -457,7 +459,7 @@ footer {
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-   color: #606;
+  color: #2F9BD6;
   font-family: Consolas, Monaco, 'Andale Mono', monospace
 }
 
@@ -481,9 +483,9 @@ span.param-type, .params td .param-type, .param-type dd {
   transition: 0.25s;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   opacity: .8;
 }
 .navicon-button .navicon:before, .navicon-button .navicon:after {
@@ -544,7 +546,7 @@ span.param-type, .params td .param-type, .param-type dd {
 /* Minus */
 .nav-trigger:checked + label {
   -webkit-transform: scale(0.75);
-          transform: scale(0.75);
+  transform: scale(0.75);
 }
 
 /* × and + */
@@ -556,20 +558,20 @@ span.param-type, .params td .param-type, .param-type dd {
 .nav-trigger:checked + label.plus .navicon:before,
 .nav-trigger:checked + label.x .navicon:before {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   background: #FFF;
 }
 
 .nav-trigger:checked + label.plus .navicon:after,
 .nav-trigger:checked + label.x .navicon:after {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   background: #FFF;
 }
 
 .nav-trigger:checked + label.plus {
   -webkit-transform: scale(0.75) rotate(45deg);
-          transform: scale(0.75) rotate(45deg);
+  transform: scale(0.75) rotate(45deg);
 }
 
 .nav-trigger:checked ~ nav {
